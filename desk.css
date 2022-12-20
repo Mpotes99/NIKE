@@ -1,0 +1,520 @@
+:root{
+    --main-c:#FFC300;
+    --black-c:#181818;
+}
+/** Estilos generales**/
+@font-face {
+    font-family:"Futura Condensed Extra Bold";
+    src: url(fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+.unitesub1{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.search{
+    border-radius: 10px;
+    padding: 3px;
+}
+
+p{
+    font-size: 1.1rem;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+h5{
+    font-size: 1.4rem;
+}
+h6{
+    font-size: 1.2rem;
+}
+
+/** Header nike **/
+iframe{
+    padding-top: 25px;
+    width:100%
+}
+.banner1{
+    width: 100%;
+}
+.banner3{
+    width: 100%;
+}
+.waffle{
+    width:100%;
+}
+.mobile1{
+    width:100%;
+}
+.colp{
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+.unitesub1{
+    padding-top: 10px;
+}
+.col1{
+    width:288px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 30px;
+}
+.coltext1{
+    margin-top: 4%;
+    font-weight: bold;
+}
+.coltext2{
+    color: grey;
+    font-size: 90%;
+    }
+/* Header Restaurante */
+
+header.main-header{
+    position: fixed;    
+    top: 0;
+    width: 100%;
+    z-index:9999;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: transparent;
+    z-index: 999;
+}
+.wrap-logo-header{
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+}
+.logo-header{
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: var(--black-c);
+    font-style: italic;
+    font-family:"Futura Condensed Extra Bold";
+}
+
+  /* Menu header */
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.nav-wrap-header{
+    display: flex;
+    flex-basis: 50%;
+}
+
+ul.main-menu{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+ul.main-menu #nav-main-contact{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: var(--main-c);
+    color:var(--black-c);
+}
+li.menu-item{
+    margin: .75rem;
+    display: flex;
+}
+li.menu-item a{
+    padding: .5rem 1rem;
+    color: rgb(0, 0, 0);
+}
+li.menu-item a:hover{
+    background-color:#181818;
+    border-radius: 48px;
+    color: white;
+}
+
+i.toggle-menu img{
+    width: 27px;
+    z-index: 99;
+}
+
+i.toggle-menu{
+    display: none;
+    background-color: #fff;
+    border: none;
+    z-index: 9999;
+}
+
+input#check{
+    display: none;
+}
+
+@media (min-width:960px){
+    .header-wrap
+    {padding: .5rem 5rem;}
+    .video{
+        margin-top: 90px;
+    }
+    .bannerr{
+        display: none;
+    }
+}
+
+@media (min-width:701px) and (max-width:959px){
+    a.logo-header{
+    color:var(--black-c);
+    }
+    .banner1{
+        margin-top: 100px;
+    }
+    .video{
+        margin-top: 100px;
+    }
+    .bannerr{
+        display: none;
+    }
+}
+
+@media (min-width:260px) and (max-width:700px){
+    .waffle{
+        display: none;
+    }
+    .banner{
+        display: none;
+    }
+    .bannerr{
+        margin-top: 100px;
+    }
+    /* join us */
+    .formulario{
+        text-align: center;
+    }
+    .terminos{
+        margin: 20px;
+    }
+
+    .video{
+        margin-top: 100px;
+    }
+    header.main-header{
+    margin-bottom: 4rem;
+    }
+    .banner1{
+        margin-top:75px ;
+    }
+    .header-wrap{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    top: 0;
+    z-index: 9999;
+    height: 60px;
+    }
+    .wrap-logo-header{
+    position: fixed;
+    z-index:999;
+    top: 3%;
+    left: 3%;
+    }
+    .logo-header, li.menu-item a{
+    color: #222;    
+    }
+
+    i.toggle-menu{
+    display: flex;
+    }
+    ul.main-menu,#nav-main-contact{
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    }
+    ul.main-menu{
+    position: fixed;
+    background-color: #fff;
+    }
+    label.checkbtn{
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 9999;
+    cursor: pointer;
+    }
+    #check:checked ~ ul{
+        display: flex;
+        z-index: 9;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        font-size: 1.5rem;
+    }
+}
+
+/* Banner 1 */
+
+/* SNKRS ROWS */
+.columnas{
+    width: 100%;
+    text-align: center;
+}
+.snkrs h3{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 72px;
+    font-family: "Futura Condensed Extra Bold";
+    letter-spacing: -4px;
+    margin-top: 3%;
+}
+.shoes{
+    margin-bottom: 100px;
+    width: 288px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+}
+.shoes1{
+    margin-bottom: 100px;
+    width: 288px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 1px;
+}
+.titleshoes{
+    color: grey;
+    font-family: "Helvetica";
+    font-size: 1.5rem;
+}
+.vermas{
+    text-decoration: none;
+    background-color: #181818;
+    border-radius: 68.5px;
+    width: 104px;
+    height: 39px;
+}
+.shoes a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+/* Banner Waffle */
+
+
+
+.bannerwaffle{
+    margin-top: 80px;
+}
+
+/* join us */
+.unitesub h2{
+    padding-top: 20px;
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.unitesub p{
+    text-align: center;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+}
+.formulario{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    font-family: "Helvetica";
+    margin-bottom: 100px;
+}
+.formulario1{
+    padding: 2%;
+    list-style: none;
+}
+.formulario1 li{
+    padding: 1% ;
+}
+.input{
+    text-decoration: none;
+    color: white;
+    background-color: #181818;
+    border-radius: 68.5px;
+    width: 104px;
+    height: 39px;
+}
+.field-long{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 68.5px;
+    width: 40%;
+    height: 39px;
+    margin-left: 16px;
+}
+.field-divided{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 68.5px;
+    width: 40%;
+    height: 39px;
+    margin-left: 10px;
+}
+.email{
+    margin-left: 100px;
+}
+.aceptar{
+    margin-left: 100px;
+}
+.unite{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family:"Futura Condensed Extra Bold";
+    letter-spacing: -4px;
+}
+.unite h4{
+    text-decoration: none;
+}
+.member{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    background-color: #f7f7f7;
+    padding: 2%;
+}
+.member h5{
+    text-align: center;
+    font-size: 120%;
+}
+.spanunite{
+    font-size: 90%;
+    color: rgba(0, 0, 0, 0.492);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.spanunite a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.492);
+}
+/* Footer de la página */
+
+footer{
+    background-color:var(--black-c);
+    color: white;
+}  
+footer ul{
+    padding: 0;
+}
+.wrap-footer{
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+element-footer h5{
+    margin: 1rem 0;
+}
+
+.text-element-footer{
+    line-height: 2;
+}
+
+.text-element-footer li a{
+    color: white;
+}
+.rrss-element-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rrss-element-footer img{
+    width: 45px;
+}
+.rrss-element-footer li{
+    margin-right: 1rem;
+}
+
+.footer-creds{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #576171;
+    font-size: .9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.legal-creds ul{
+    display: flex;
+}
+
+.legal-creds ul li{
+    padding-right: 1rem;
+}
+
+.legal-creds ul li a{
+    color: #576171;
+}
+.nothing{
+    margin-top: 4rem;
+}
+@media (max-width:768px){
+    .wrap-footer{
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:480px){
+    .wrap-footer{
+    grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:320px){
+    .footer-creds{
+    flex-flow: column;
+    }
+}
