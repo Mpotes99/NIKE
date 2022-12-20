@@ -5,7 +5,7 @@
 /** Estilos generales**/
 @font-face {
     font-family:"Futura Condensed Extra Bold";
-    src: url(fonts/Futura\ Condensed\ Extra\ Bold.otf);
+    src: url(fonts/FuturaCondensedExtraBold.otf);
 }
 html{
     font-family: Arial, Helvetica, sans-serif;
